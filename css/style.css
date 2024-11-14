@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.6;
+  font-size: 20px;
+  font-family: "inter";
+}
+
+:root {
+  --container-large: 114rem;
+  --container-medium: 110rem;
+  --container-small: 90rem;
+  --primary-color: antiquewhite;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: rgb(73, 73, 73);
+  font-size: 1.8rem;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.logo-image {
+  width: 15rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--container-small);
+  margin: 0 auto;
+  padding: 2rem 2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 3rem;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+  section.hero-text h1 {
+    font-size: 3.5rem;
+  }
+
+  section.hero-text {
+    margin-top: 30px;
+  }
+  div.gallery-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .last-img {
+    grid-column: 1 / span 2;
+  }
+
+  .footer .footer-box {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .team-members .team-container,
+  .services .services-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-bg h1 {
+    line-height: 1.4;
+  }
+
+  .hero-text .hero-text-color {
+    font-size: 3rem;
+    line-height: 1.7;
+  }
+}
+
+.contact {
+  padding: 3rem;
+}
+
+.contact-us {
+  padding: 2rem;
+  text-align: center;
+}
+
+.home-current {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.primary-color {
+  background-color: var(--primary-color);
+  padding: 1rem;
+}
+
+.hero-text {
+  max-width: var(--container-medium);
+  margin: 10rem auto 3rem;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.hero-text-color {
+  color: black;
+}
+
+.contact {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  font-size: 1.8rem;
+}
+.contact-bg {
+  background-color: rgb(54, 54, 54);
+}
+
+.contact-bg div {
+  padding: 5rem 3rem;
+}
+
+.hero-text-color {
+  color: white;
+}
+
+.contact-primary {
+  color: rgb(54, 54, 54);
+}
+
+.hero-text h1 {
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+.gallery-container,
+.footer-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  max-width: var(--container-large);
+  margin: 0 auto 7rem;
+  padding: 0 2rem;
+}
+
+.gallery-container img {
+  width: 100%;
+
+  border-radius: 10px;
+}
+
+.gallery-container div:hover {
+  opacity: 0.8;
+}
+
+.footer {
+  border-top: 1px solid rgb(136, 136, 136);
+  padding: 4rem 4rem 0;
+}
+.footer-box {
+  justify-items: center;
+  align-items: center;
+}
+.footer-box h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: rgb(43, 43, 43);
+}
+.footer-box p {
+  font-size: 1.4rem;
+  color: rgb(73, 73, 73);
+}
+
+/* SERVICES */
+
+.services {
+  background-color: rgb(54, 54, 54);
+}
+
+.services h2 {
+  text-align: center;
+  color: white;
+  padding: 4rem;
+}
+
+.services-container {
+  max-width: var(--container-large);
+  margin: 0 auto;
+  padding: 0 3rem 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  color: white;
+}
+
+.services-container h3 {
+  margin-bottom: 1.2rem;
+  font-size: 2rem;
+}
+
+.services-container p {
+  font-size: 1.6rem;
+}
+
+.team-text {
+  text-align: center;
+  margin: 5rem;
+  /* padding: 2rem; */
+}
+
+.team-container {
+  max-width: var(--container-large);
+  margin: 0 auto 8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 3rem 0;
+  gap: 2rem;
+}
+
+.team-container .img {
+  width: 100%;
+  border-radius: 7px;
+}
+
+.team-container h4 {
+  font-size: 1.8rem;
+  color: rgb(43, 43, 43);
+}
+
+.team-container p {
+  font-size: 1.4rem;
+  color: rgb(43, 43, 43);
+}
+
+/* FORM */
+.form {
+  max-width: var(--container-medium);
+  margin: 0 auto 9rem;
+  padding: 0 3rem;
+}
+
+.form input,
+textarea {
+  width: 100%;
+  padding: 2rem 0 1rem;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: rgb(73, 73, 73);
+  border: none;
+  border-bottom: 1px black solid;
+  font-weight: 400;
+}
+
+.form textarea {
+  height: 18rem;
+}
+.form input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.form button {
+  width: 100%;
+  padding: 2rem 0;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border: none;
+  border: 1px solid black;
+  background-color: white;
+  margin-top: 4rem;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.form-group .btn {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.form-group .btn:hover {
+  color: white;
+  background-color: black;
+}

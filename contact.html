@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/favicon.ico" />
+    <title>Lumina About</title>
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <img src="images/logo.png" alt="logo" class="logo-image" />
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="home-current">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="contact-bg">
+      <div class="hero-text">
+        <h1 class="hero-text-color">
+          <span class="primary-color contact-primary">Enthusiastic</span>
+          thinkers, creating unique endeavors powered by
+          <span class="primary-color contact-primary">creativity</span>
+        </h1>
+      </div>
+    </section>
+    <div class="contact">
+      <h3 class="contact-us">Contact Us</h3>
+      <p>
+        Have a question? Leave your information below and we will get back to
+        you as soon as possible.
+      </p>
+    </div>
+    <form class="form">
+      <div class="form-group">
+        <label for="first-name" class="visually-hidden">First Name</label>
+        <input
+          type="text"
+          name="first-name"
+          id="first-name"
+          required
+          placeholder="First Name"
+        />
+      </div>
+      <div class="form-group">
+        <label for="last-name" class="visually-hidden">Last Name</label>
+        <input
+          type="text"
+          name="last-name"
+          id="last-name"
+          required
+          placeholder="Last Name"
+        />
+      </div>
+      <div class="form-group">
+        <label for="email" class="visually-hidden">First Name</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="Email"
+        />
+      </div>
+      <label for="message" class="visually-hidden">Message</label>
+      <textarea
+        name="message"
+        id="message"
+        required
+        placeholder="Message"
+      ></textarea>
+      <div class="form-group">
+        <button type="submit" class="btn">Submit</button>
+      </div>
+    </form>
+
+    <footer class="footer">
+      <div class="footer-box">
+        <div>
+          <img src="images/logo.png" alt="logo" class="logo-image" />
+        </div>
+        <div class="contact-container">
+          <h2>Contact Us</h2>
+          <p>(555) 475-5851</p>
+          <p>contact@lumina.test</p>
+          <p>17 Main st Boston MA</p>
+        </div>
+
+        <div class="social-media">
+          <h2>Follow Us</h2>
+          <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="#"><i class="fab fa-pinterest fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
